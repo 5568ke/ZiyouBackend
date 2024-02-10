@@ -174,7 +174,6 @@ def transform_theme(db: Session) -> None:
 def transform_keyword(db: Session) -> None:
     with open("/usr/backend/datafiles/keyword_list.txt", 'r', encoding='utf-8') as file:
         raw_data = file.read()
-    keyword
     _list = eval(raw_data)
     for item in _list:
         keyword = Keyword(keyword=item[0],problem_id=item[1])
