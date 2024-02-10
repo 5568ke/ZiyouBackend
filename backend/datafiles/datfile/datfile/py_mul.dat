@@ -1,0 +1,105 @@
+#Answer = Int_1 * Int_2
+
+\Range
+Integer | Int_1       | Int_2       | Answer
+  1     | [1,9]       | [1,9]       | - 
+
+  2     | [1,9]       | [10,99]     | -
+  3     | [10,99]     | [1,9]       | -
+
+  4     | [1,9]       | [100,999]   | -
+  5     | [100,999]   | [1,9]       | -
+
+  6     | [10,99]     | [10,99]     | -
+
+  7     | [10,99]     | [100,999]   | -
+  8     | [100,999]   | [10,99]     | -
+  
+  9     | [100,999]   | [100,999]   | -
+
+  10    | [10,99]     | [1000,9999] | -
+  11    | [1000,9999] | [10,99]     | -
+
+  12    | [100,999]   | [1000,9999] | -
+  13    | [1000,9999] | [100,999]   | -
+\EndRange
+
+#1
+#一包鉛筆有6枝,2包鉛筆共有多少枝?
+
+\Begin
+
+\Question
+ㄧ {unit_1} {object_1} 有 {Int_1} {unit_2} {object_2} , {Int_2} {unit_1} {object_1} 共有 {object_2} 多少 {unit_2} ?
+
+\Unordered_Variable
+object_1-unit_1 | object_2-unit_2-Int_1
+鉛筆-包         | None-枝-rand
+學生-個         | 數學練習簿-本-rand
+睡衣-件         | 釦子-個-rand
+汽車-輛         | 輪子-個-4
+蝴蝶-隻         | 翅膀-隻-4 , 腳-隻-6
+雞-隻           | 腳-隻-2
+星期-個         | None-天-7
+
+\Solution
+Answer,Int_1,Int_2,
+Answer = Int_1 * Int_2
+
+\End
+
+#2
+#一個魚缸養金魚9條,5個魚缸共養金魚多少條?
+
+\Begin
+
+\Question
+一 {unit_1} {object_1} {verb} {object_2} {Int_1} {unit_2} , {Int_2} {unit_1} {object_1} 共 {verb} {object_2} 多少 {unit_2} ?
+
+\Unordered_Variable
+object_1       | object_2-unit_2 | verb
+魚缸           | 金魚-@          | 養
+桌子,長椅,吊車 | None-人         | 可坐
+
+\Solution
+Answer,Int_1,Int_2,
+Answer = Int_1 * Int_2
+
+\End
+
+#3
+#皮球一個賣9元,買6個皮球,共需要多少元?
+
+\Begin
+
+\Question
+{object} 一 {unit} 賣 {Int_1} 元 , {verb_1} {Int_2} {unit} {object} , 共 {verb_2} 多少元 ? 
+
+\Unordered_Variable
+object           | verb_1 | verb_2
+橡皮擦,皮球,簿子 | 買     | 需要
+足球             | 賣出   | 賣出
+
+\Solution
+Answer,Int_1,Int_2,
+Answer = Int_1 * Int_2
+
+\End
+
+#4
+#一盒月餅有4個,爸爸買了4盒,共有月餅多少個?
+
+\Begin
+
+\Question
+一 {unit_2} {object_1} 有 {Int_1} {unit_1} , {who} {verb} {Int_2} {unit_2} , 共有 {object_1} 多少 {unit_1} ?
+
+\Unordered_Variable
+who       | verb | object_1-unit_2
+爸爸,哥哥 | 買了 | 電池-盒,月餅-盒,柳丁-袋
+
+\Solution
+Answer,Int_1,Int_2,
+Answer = Int_1 * Int_2
+
+\End

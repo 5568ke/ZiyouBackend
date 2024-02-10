@@ -1,0 +1,57 @@
+#Answer = Int_1 - Int_2 * Int_3
+
+\Range
+Integer | Int_1    | Int_2   | Int_3   | Answer
+  1     | [1,9999] | [1,99]  | [1,99]  |   -
+  2     | [1,9999] | [1,999] | [1,9]   |   -
+  3     | [1,9999] | [1,9]   | [1,999] |   -
+\EndRange
+
+#1
+
+\Begin
+
+\Question
+{object_1} {Int_1} {unit_1} , 分給 {object_2} {Int_2} {unit_2} , 每 {unit_2} {Int_3} {unit_1} , 還剩下 {object_1} 多少 {unit_1} ?
+
+\Unordered_Variable
+object_1         | object_2-unit_2
+原子筆,鉛筆,糖果 | 學生-@,None-人
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 - Int_2 * Int_3
+
+\End
+
+#2
+
+\Begin
+
+\Question
+{Int_1} 減去 {Int_2} 的 {Int_3} 倍 , 還餘多少 ?
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 - Int_2 * Int_3
+
+\End
+
+#3
+
+\Begin
+
+\Question
+{object_1} 每 {unit_1} {Int_2} 元 , 現買 {Int_3} {unit_1} , 付 {object_2} 一張 , 找回多少元 ?
+
+\Unordered_Variable
+object_1              | object_2-Int_1  | Int_2,Int_3
+原子筆,鉛筆,糖果,麵包 | 100元鈔票-100   | [1,9]
+原子筆,鉛筆,糖果,麵包 | 500元鈔票-500   | [1,20]
+原子筆,鉛筆,糖果,麵包 | 1000元鈔票-1000 | [1,30]
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 - Int_2 * Int_3
+
+\End

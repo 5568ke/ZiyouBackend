@@ -1,0 +1,112 @@
+#Answer = Int_1 / Int_2 * Int_3
+
+\Range
+Integer | Int_1    | Int_2   | Int_3   | Answer
+  1     | [1,9999] | [1,999] | [1,999] |   -
+
+\EndRange
+
+#1
+
+\Begin
+
+\Question
+{object_1} {Int_2} {unit_1} {Int_1} 元 , {object_1} {Int_3} {unit_1} 要多少元 ?
+
+\Unordered_Variable
+object_1
+筆記本,鉛筆,原子筆,梨子
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 / Int_2 * Int_3
+
+\End
+
+#2
+
+\Begin
+
+\Question
+{object_1} {Int_2} {unit_1} {Int_3} 元 , {object_1} {Int_1} {unit_1} 要多少元 ?
+
+\Unordered_Variable
+object_1
+筆記本,鉛筆,原子筆,梨子
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 / Int_2 * Int_3
+
+\End
+
+#3
+
+\Begin
+
+\Question
+{Int_2} {unit_1} {object_1} 共有 {object_2} {Int_1} {unit_2} , {Int_3} {unit_1} 共有 {object_2} 多少 {unit_2} ?
+
+\Unordered_Variable
+object_1-unit_1 | object_2-unit_2
+足球隊-隊       | 球員-@
+巧克力餅乾-包   | None-塊
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 / Int_2 * Int_3
+
+\End
+
+#4
+
+\Begin
+
+\Question
+{object_1} {Int_2} {unit_1} 共有 {object_2} {Int_1} {unit_2} , {Int_3} {unit_1} 共有 {object_2} 多少 {unit_2} ?
+
+\Unordered_Variable
+object_1-unit_1 | object_2-unit_2
+大廈-層         | None-住戶
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 / Int_2 * Int_3
+
+\End
+
+#5
+
+\Begin
+
+\Question
+{object_1} 工作 {Int_2} {unit} 工資 {Int_1} 元 , 則工作 {Int_3} {unit} 工資為多少元 ?
+
+\Unordered_Variable
+object_1 | unit
+甲,乙,丙 | 小時,天,星期
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 / Int_2 * Int_3
+
+\End
+
+#6
+
+\Begin
+
+\Question
+{object_1} {Int_2} {unit_1} 可 {verb} {object_2} {Int_1} {unit_2} , {object_1} {Int_3} {unit_1} 可 {verb} {object_2} 多少 {unit_2}  ?
+
+\Unordered_Variable
+object_1 | object_2  | verb
+遊覽車   | 學生,遊客 | 載
+書櫃     | 書        | 放
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 / Int_2 * Int_3
+
+\End
+

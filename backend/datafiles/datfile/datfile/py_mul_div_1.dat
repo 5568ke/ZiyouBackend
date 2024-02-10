@@ -1,0 +1,110 @@
+#Answer = Int_1 * Int_2 / Int_3
+
+\Range
+Integer | Int_1   | Int_2   | Int_3   | Answer
+  1     | [1,999] | [1,999] | [1,999] |   -
+
+\EndRange
+
+#1
+
+\Begin
+
+\Question
+{Int_1} 乘以 {Int_2} 的積 , 再除以 {Int_3} , 結果是多少 ?
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 * Int_2 / Int_3
+
+\End
+
+#2
+
+\Begin
+
+\Question
+用 {Int_3} 去除 {Int_1} 與 {Int_2} 的積 , 結果商是多少 ?
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 * Int_2 / Int_3
+
+\End
+
+#3
+
+\Begin
+
+\Question
+{object_1} {Int_1} {unit} , 每 {unit} {Int_2} {unit_1} , 平均 {verb} {Int_3} {unit_2} {object_2} , 則每 {unit_3} 有多少 {unit_1} {object_1} ?
+
+\Unordered_Variable
+object_1-unit                       | verb | object_2-unit_3
+巧克力糖-盒,鉛筆-盒,枇杷-盒,汽水-箱 | 分給 | 小孩-人,學生-人,兒童-人,童子軍-隊
+蘋果-箱,圖書-箱                     | 放在 | 盒子-盒,櫃子-個
+圖書-箱                             | 放入 | 書櫃-個
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 * Int_2 / Int_3
+
+\End
+
+#4
+
+\Begin
+
+\Question
+{object_1} 每 {unit_1} {Int_1} 元 , {object_1} {Int_2} {unit_1} 的錢可買 {object_2} {Int_3} {unit_2} , {object_2} 每 {unit_2} 多少元 ?
+
+\Unordered_Variable
+object_1,object_2
+鉛筆,筆記本
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 * Int_2 / Int_3
+
+\End
+
+#5
+
+\Begin
+
+\Question
+{object_1} 的年齡是 {object_2} 的 {Int_2} 倍 , 是 {object_3} 的 {Int_3} 倍 , 已知 {object_2} 今年是 {Int_1} 歲 , 則 {object_3} 今年是多少歲 ?
+
+\Ordered_Variable
+object_1,object_2,object_3
+爸爸,哥哥,弟弟,妹妹
+爸爸,姊姊,弟弟,妹妹
+媽媽,哥哥,弟弟,妹妹
+媽媽,姊姊,弟弟,妹妹
+
+\Unordered_Variable
+Int_1  | Int_2 | Answer
+[9,15] | [3,4] | [2,8]
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 * Int_2 / Int_3
+
+\End
+
+#6
+
+\Begin
+
+\Question
+{object_1} 每 {unit} 有 {Int_1} {unit_1} , {Int_3} 人合買 {Int_2} {unit} , 則每人可分得多少 {unit_1} {object_1} ?
+
+\Unordered_Variable
+object_1-unit
+巧克力糖-盒,鉛筆-盒,枇杷-盒,汽水-箱,蘋果-箱,圖書-箱
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 * Int_2 / Int_3
+
+\End

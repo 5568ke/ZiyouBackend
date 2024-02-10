@@ -1,0 +1,290 @@
+#a+b
+
+\Range
+Kind | Fpn_1     | Fpn_2     | float
+1    | [0.1,1.0] | [0.1,1.0] | 1
+2    | [0.0,1.0] | [0.0,1.0] | 2 
+3    | [0.0,1.0] | [0.0,1.0] | 3 
+
+\EndRange
+
+
+#========================================================================================================
+
+\Begin
+
+\Question
+{person_1} 的體重是 {Fpn_1} kg , func('比',['{person_1}','{person_2}'],"輕重") {Fpn_2} kg ,請問 {person_2} 的體重是多少kg?
+
+\Unordered_Variable
+person_1,person_2    | Fpn_1       | Fpn_2       
+爸爸,阿嬤            | [30.0,70.0] | [0.1,10.0]
+
+\Solution
+Fpn_1,Fpn_2,Answer,
+Answer=Fpn_1+Fpn_2
+
+\End
+
+
+#=============================================================================================================
+
+#2
+
+#哥哥重30.5 kg,弟弟重22.7kg,請問兩人共重多少kg?
+
+\Begin
+
+\Question
+{object_1}重{Fpn_1}{wei_unit},{object_2}重{Fpn_2}{wei_unit},請問{total_object}共重{wei_unit}?
+
+\Unordered_Variable
+object_1,object_2  | total_object | wei_unit  | Fpn_1,Fpn_2
+爸爸,阿嬤          | 兩人         | kg        | [20.0,80.0]
+一隻貓,一隻小狗    | 兩隻動物     | kg        | [2.0,6.0]
+紅糖一包,白糖一包  | 兩包糖       | kg        | [0.2,0.3]
+ 
+\Solution
+Fpn_1,Fpn_2,Answer,
+Answer=Fpn_1+Fpn_2
+
+\End
+
+
+#=============================================================================================================
+
+#3
+
+#小明慢跑,昨天跑了1.5km,今天跑了2.2km,請問這兩天共跑了多少km?
+
+\Begin
+
+\Question
+{person}{veb_1},{time_1}{veb_2}了{Fpn_1}{len_unit},{time_2}{veb_2}了{Fpn_2}{len_unit},請問{time}共{veb_2}了多少{len_unit}?
+
+\Unordered_Variable
+person    | veb_1     | veb_2 | len_unit | Fpn_1,Fpn_2
+爸爸,阿嬤   | 慢跑,運動 | 跑    | km       | [0.5,5.0]
+工人      | 築路      | 築    | km       | [1.0,5.0]
+姊姊,媽媽 | 縫製衣服  | 用布  | m        | [1.0,3.0]
+
+\Ordered_Variable
+time_1,time_2  | time
+昨天,今天      | 這兩天
+早上,下午,晚上 | 今天
+
+\Solution
+Fpn_1,Fpn_2,Answer,
+Answer=Fpn_1+Fpn_2
+
+\End
+
+#=============================================================================================================
+
+#4
+
+#小明慢跑,昨天跑了1.2km,比今天少跑了0.5km,請問今天跑了多少km?
+
+\Begin
+
+\Question
+{person} {veb_1} , {time_1} {veb_2} {Fpn_1} {len_unit} ,func('比',['{time_1}','{time_2}'],"少多") {veb_2} {Fpn_2} {len_unit} ,請問 {time_2} {veb_2} 多少 {len_unit}?
+
+\Unordered_Variable
+person    | veb_1     | veb_2  | len_unit | Fpn_1     | Fpn_2
+爸爸,阿嬤   | 慢跑,運動 | 跑了   | km       | [0.5,5.0] | [0.5,2]
+工人      | 築路      | 修築   | km       | [1.0,5.0] | [0.2,1.2]
+姊姊,媽媽 | 縫製衣服  | 用布   | m        | [1.0,3.0] | [0.2,0.8]
+
+
+\Ordered_Variable
+time_1,time_2  
+昨天,今天      
+早上,下午,晚上 
+
+\Solution
+Fpn_1,Fpn_2,Answer,
+Answer=Fpn_1+Fpn_2
+
+\End
+
+#========================================================================================================
+
+#5
+
+#爸爸開車,昨天用了1.8L的汽油,今天用了1.5,請問這兩天共用了多少L的汽油?
+
+
+\Begin
+
+\Question
+{person}{veb_1},{time_1}{veb_2}了{Fpn_1}{cap_unit}的{object},{time_2}{veb_2}了{Fpn_2}{cap_unit},請問{time}共{veb_2}了多少{cap_unit}的{object}?
+
+\Unordered_Variable
+person | veb_1  | veb_2 | cap_unit | object | Fpn_1,Fpn_2         
+爸爸   | 開車   | 用    | L        | 汽油   | [0.5,5.0] 
+爸爸,阿嬤| 喝水   | 喝    | ml       | 水     | [300.0,2000.0] 
+
+\Ordered_Variable
+time_1,time_2  | time
+昨天,今天      | 這兩天
+早上,下午,晚上 | 今天
+
+\Solution
+Fpn_1,Fpn_2,Answer,
+Answer=Fpn_1+Fpn_2
+
+\End
+
+
+#========================================================================================================
+
+#6
+
+#飲料店昨天用掉牛奶8.5公升,比今天少用掉2.3公升,請問今天用掉多少公升的牛奶?
+
+\Begin
+
+\Question
+{who} {time_1} {veb} {object} {Fpn_1} {cap_unit} ,func('比',['{time_1}','{time_2}'],"少多") {veb} {Fpn_2} {cap_unit} ,請問 {time_2} {veb} 多少 {cap_unit} 的 {object} ?
+
+\Unordered_Variable
+who    | veb  | object    | cap_unit | Fpn_1      | Fpn_2
+飲料店 | 用掉 | 牛奶,紅茶 | l        | [2.0,15.0] | [0.1,1.5]
+
+\Ordered_Variable
+time_1,time_2
+昨天,今天
+早上,下午,晚上
+
+\Solution
+Fpn_1,Fpn_2,Answer,
+Answer=Fpn_1+Fpn_2
+
+\End
+
+
+#=============================================================================================================
+
+#7
+
+#小明身高1.50m,小強比小明高0.15m,請問小強身高多少m?
+#小明身高1.56m,小明比小強矮0.23m,請問小強身高多少m?
+
+\Begin
+
+\Question
+{person_1} 身高 {Fpn_1} m,func('比',['{person_1}','{person_2}'],"矮高") {Fpn_2} m,請問 {person_2} 身高多少m?
+
+\Unordered_Variable
+person_1,person_2  | Fpn_1          | Fpn_2
+爸爸,阿嬤 | [1.20 , 1.65]  | [0.01,0.1]
+
+\Solution
+Fpn_1,Fpn_2,Answer,
+Answer=Fpn_1+Fpn_2
+
+\End
+
+
+#=============================================================================================================
+
+#8
+
+#黃絲帶長 0.2m,紅絲帶長 0.4m,請問兩條絲帶共長多少m?
+
+\Begin
+
+\Question
+{object_1} 長 {Fpn_1} {len_unit} , {object_2} 長 {Fpn_2} {len_unit} , 請問 {total_object} 共長多少{len_unit} ?
+
+\Unordered_Variable
+object_1,object_2       | total_object    | len_unit | Fpn_1,Fpn_2
+姊姊的絲帶 , 妹妹的絲帶 | 她們二人的絲帶  | m        | [0.1,2.0]
+黃絲帶 , 紅絲帶         | 兩條絲帶        | m        | [0.1,2.0]
+甲繩 , 乙繩             | 兩繩            | m        | [0.2,3.0]
+
+\Solution
+Fpn_1,Fpn_2,Answer,
+Answer=Fpn_1+Fpn_2
+
+\End
+
+
+#=============================================================================================================
+
+#9
+
+#王家吃米,昨天吃了1.7kg的米,今天吃了2.5kg,請問這兩天共吃了多少kg的米?
+
+\Begin
+
+\Question
+{person}{veb_1},{time_1}{veb_2}了{Fpn_1}{wei_unit}的{object},{time_2}{veb_2}了{Fpn_2}{wei_unit},請問{time}共{veb_2}了多少{wei_unit}的{object}?
+
+\Unordered_Variable
+person | veb_1  | veb_2 | wei_unit    | object | Fpn_1,Fpn_2
+王家   | 吃米   | 吃    | kg          | 米     | [0.2,1.0]
+姊姊   | 做蛋糕 | 用    | kg          | 麵粉   | [5.0,20.0] 
+
+\Ordered_Variable
+time_1,time_2  | time
+昨天,今天      | 這兩天
+早上,下午,晚上 | 今天
+
+\Solution
+Fpn_1,Fpn_2,Answer,
+Answer=Fpn_1+Fpn_2
+
+\End
+
+
+#=============================================================================================================
+
+#10
+
+#將2.567kg的麵粉裝入0.35kg重的袋子裡,請問一共重多少公斤?
+
+\Begin
+
+\Question
+將 {Fpn_1} {wei_unit} 的 {object_1} 裝入 {Fpn_2} {wei_unit} 重的 {object_2} 裡 , 請問一共重多少 {wei_unit} ?
+
+\Unordered_Variable
+object_1 | object_2 | wei_unit | Fpn_1     | Fpn_2
+麵粉     | 袋子     | kg       | [0.5,5.0] | [0.01,0.2]
+字典     | 盒子     | kg       | [2.0,4.0] | [0.01,0.5]
+
+\Solution
+Fpn_1,Fpn_2,Answer,
+Answer=Fpn_1+Fpn_2
+
+\End
+
+
+#========================================================================================================
+
+#11
+
+#昨天的氣溫是攝氏16.2度,今天比昨天高1.4度,請問今天的氣溫是攝氏多少度?
+
+
+\Begin
+
+\Question
+{time_1} 的氣溫是 {tem_unit} {Fpn_1} 度 ,func('比',['{time_1}','{time_2}'],"低高") {Fpn_2} 度 ,請問 {time_2} 的氣溫是 {tem_unit} 多少度?
+
+\Unordered_Variable
+tem_unit | Fpn_1       | Fpn_2       
+攝氏      | [10.0,30.0] | [0.01,8.0]
+
+\Ordered_Variable
+time_1,time_2
+昨天,今天
+晚上,早上,中午
+
+\Solution
+Fpn_1,Fpn_2,Answer,
+Answer=Fpn_1+Fpn_2
+
+\End

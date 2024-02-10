@@ -1,0 +1,65 @@
+#Answer = Int_1 - Int_2 + Int_3
+
+\Range
+Integer | Int_1       | Int_2       | Int_3       | Answer
+  1     | [10,99]     | [10,99]     | [10,99]     | -
+  2     | [100,999]   | [100,999]   | [100,999]   | -
+  3     | [1000,9999] | [1000,9999] | [1000,9999] | -
+  4     | [1,9999]    | [1,9999]    | [1,9999]    | -
+\EndRange
+
+#1
+
+\Begin
+
+\Question
+{where} 有 {object} {Int_1} {unit} , {verb_1} {Int_2} {unit} , 又 {verb_2} {Int_3} {unit} , 現在共有 {object} 多少 {unit} ?
+
+\Unordered_Variable
+where | object | verb_1 | verb_2
+家裡  | 汽水   | 喝去   | 買回
+圖書櫃| 書     | 借出   | 還回來
+超市  | 汽水   | 賣出   | 買回
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 - Int_2 + Int_3
+
+\End
+
+#2
+
+\Begin
+
+\Question
+{where} 有 {object_1} {Int_1} {unit} , func('比',['{object_2}','{object_1}'],'少多') {Int_2} {unit} , func('比',['{object_3}','{object_2}'],'多少') {Int_3} {unit} , {object_3} 有多少 {unit} ?
+
+\Unordered_Variable
+where | object_1,object_2,object_3 | unit
+農場  | 公雞,母雞,小雞             | 隻
+工廠  | 早班工人,午班工人,晚班工人 | 人
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 - Int_2 + Int_3
+
+\End
+
+#3
+
+\Begin
+
+\Question
+{where} 有 {object_1} {Int_1} {unit} , func('比',['{object_1}','{object_2}'],'多少') {Int_2} {unit} , {where} 共有 {object} 多少 {unit} ?
+
+\Unordered_Variable
+where | object_1,object_2 | object-unit
+遊樂場| 小孩,大人         | None-人
+公園  | 男孩子,女孩子     | 孩子-人
+農場  | 公雞,母雞,小雞    | 雞-隻
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 - Int_2 + Int_1 
+
+\End
