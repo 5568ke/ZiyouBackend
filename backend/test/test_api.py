@@ -1,6 +1,3 @@
-import sys
-sys.path.append('/usr/backend')
-
 # backend/tests/test_api.py
 from fastapi.testclient import TestClient
 from src.main import backend_app
