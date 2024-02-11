@@ -50,8 +50,7 @@ This project is version-controlled with Git. You can view the available versions
 - :calendar: **Set up Redis for enhanced caching and session management (Potential Requirement)** 
 - :calendar: **Integration with the 小學堂 Mobile App** 
 
-## mascot
-                  :sos::sos::sos:
+## mascot :sos: :sos: :sos:
 ```
 
                        _oo0oo_
