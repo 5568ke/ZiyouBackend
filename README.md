@@ -3,7 +3,7 @@
 # Ziyou Backend Project
 
 ## Introduction
-Ziyou Backend is a backend service framework specifically designed to receive requests and call C++ executables to generate and return problem PDFs. It aims to offer flexibility in development and reliability in the future.Utilizing Docker containerization, automated testing, and Continuous Integration/Continuous Deployment (CI/CD) strategies 
+Ziyou Backend is a backend service framework specifically designed to receive requests and call C++ executables to generate and return problem PDFs. It aims to offer flexibility in development and reliability in the future.Utilizing fastapi, Docker containerization, automated testing, and Continuous Integration/Continuous Deployment (CI/CD) strategies 
 ## Installation Guide
 1. **Prerequisites**: Ensure your system has Docker and Docker Compose installed.
 2. **Clone the Project**: Use the git command to clone the project to your local machine.
@@ -49,7 +49,7 @@ This project is version-controlled with Git. You can view the available versions
 - :calendar: **Integration with Vue.js Frontend**: 
 - :calendar: **Set up Redis for enhanced caching and session management (Potential Requirement)** 
 - :calendar: **Integration with the 小學堂 Mobile App** 
-- :calendar: **交接給下一個替死鬼** 
+- :calendar: **抓下一個替死鬼進來坐牢** 
 
 ## mascot :sos: :sos: :sos:
 ```
