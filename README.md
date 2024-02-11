@@ -42,11 +42,11 @@ This project is version-controlled with Git. You can view the available versions
 - :white_check_mark: **Migrating Data from the Old Database to the New Design**
 - :arrow_forward: **Designing the Question Generation API**  (In progress)
 - :arrow_forward: **PDF Output Adjustment via Parameters**  (In progress)
-- :calendar: **Integration with Educational Cloud(教育雲) Accounts**: 
-- :calendar: **Integrate with a C++ backend system for question Recommendation System.**: 
-- :calendar: **Establish continuous deployment workflows**:
+- :calendar: **Integration with Educational Cloud(教育雲) Accounts** 
+- :calendar: **Integrate with a C++ backend system for question Recommendation System**
+- :calendar: **Establish continuous deployment workflows**
 - :calendar: **Comprehensive Unit Testing**
-- :calendar: **Integration with Vue.js Frontend**: Integrate the backend with a Vue.js frontend for a seamless user experience.
+- :calendar: **Integration with Vue.js Frontend**: 
 - :calendar: **Set up Redis for enhanced caching and session management (Potential Requirement)** 
 - :calendar: **Integration with the 小學堂 Mobile App** 
 
