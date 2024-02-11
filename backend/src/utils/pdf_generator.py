@@ -4,8 +4,8 @@ import os
 from datetime import datetime
 from typing import List,Tuple
 from .problem_command import ProblemCommand
-from .schemas import ProblemRequest
-from .models import Problem
+from ..schemas import ProblemRequest
+from ..models import Problem
 
 class PDFGenerator:
     def __init__(self,request: ProblemRequest, selected_problems: List[Problem]):
