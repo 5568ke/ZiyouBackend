@@ -38,17 +38,17 @@ This project is version-controlled with Git. You can view the available versions
 
 
 ## To-Do Features
-- :heavy_check_mark: **Understanding the Old Web Backend Behavior**
-- :heavy_check_mark: **Migrating Data from the Old Database to the New Design**
+- :white_check_mark: **Understanding the Old Web Backend Behavior**
+- :white_check_mark: **Migrating Data from the Old Database to the New Design**
 - :clock9: **Designing the Question Generation API**  (In progress)
-- :x: **PDF Output Adjustment via Parameters**: Implement functionality to adjust the generated PDF outputs through parameters.
-- :x: **Integration with Educational Cloud Accounts**: Enable account integration with 教育雲 account.
-- :x: **Connection to C++ Based Question Recommendation System**: Integrate with a C++ backend system for question recommendations.
-- :x: **Continuous Deployment**: Establish continuous deployment workflows to streamline updates and releases.
-- :x: **Comprehensive Unit Testing**: Expand the unit testing suite for more thorough coverage.
-- :x: **Integration with Vue.js Frontend**: Integrate the backend with a Vue.js frontend for a seamless user experience.
-- :x: **Redis Implementation (Potential Requirement)**: Set up Redis for enhanced caching and session management.
-- :x: **Integration with the Xiaoxuetang Mobile App**: Connect the backend with the 小學堂 mobile app for extended functionalities.
+- :calendar: **PDF Output Adjustment via Parameters**: Implement functionality to adjust the generated PDF outputs through parameters.
+- :calendar: **Integration with Educational Cloud Accounts**: Enable account integration with 教育雲 account.
+- :calendar: **Connection to C++ Based Question Recommendation System**: Integrate with a C++ backend system for question recommendations.
+- :calendar: **Continuous Deployment**: Establish continuous deployment workflows to streamline updates and releases.
+- :calendar: **Comprehensive Unit Testing**: Expand the unit testing suite for more thorough coverage.
+- :calendar: **Integration with Vue.js Frontend**: Integrate the backend with a Vue.js frontend for a seamless user experience.
+- :calendar: **Redis Implementation (Potential Requirement)**: Set up Redis for enhanced caching and session management.
+- :calendar: **Integration with the Xiaoxuetang Mobile App**: Connect the backend with the 小學堂 mobile app for extended functionalities.
 
 
 
