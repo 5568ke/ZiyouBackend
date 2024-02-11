@@ -26,7 +26,6 @@ Ziyou Backend is a backend service framework specifically designed to receive re
 This project includes a `docker-compose.yml` file, defining the services required by the project. This allows for easy management and operation of multiple containers for the project using Docker Compose.
 
 ## Development Workflow
-As this is a team project and team members may not be familiar with Git, here is a simplified development workflow:
 1. **Clone the project** to your local machine as shown in the Installation Guide.
 2. **Create a new branch** for your feature or bug fix (`git checkout -b feature/YourFeatureName`).
 3. **Make changes** and **commit** them to your branch (`git commit -am "Add your feature"`).
