@@ -49,6 +49,7 @@ This project is version-controlled with Git. You can view the available versions
 - :calendar: **Integration with Vue.js Frontend**: 
 - :calendar: **Set up Redis for enhanced caching and session management (Potential Requirement)** 
 - :calendar: **Integration with the 小學堂 Mobile App** 
+- :calendar: **交接給下一個替死鬼** 
 
 ## mascot :sos: :sos: :sos:
 ```
