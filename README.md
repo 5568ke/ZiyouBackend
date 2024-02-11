@@ -25,23 +25,22 @@ Ziyou Backend is a backend service framework specifically designed to receive re
 ## Docker Support
 This project includes a `docker-compose.yml` file, defining the services required by the project. This allows for easy management and operation of multiple containers for the project using Docker Compose.
 
-## Contribution Guide
-We welcome and appreciate any contributions from community members. If you wish to contribute, please follow these steps:
-1. Fork the project
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## Development Workflow
+As this is a team project and team members may not be familiar with Git, here is a simplified development workflow:
+1. **Clone the project** to your local machine as shown in the Installation Guide.
+2. **Create a new branch** for your feature or bug fix (`git checkout -b feature/YourFeatureName`).
+3. **Make changes** and **commit** them to your branch (`git commit -am "Add your feature"`).
+4. **Push your branch** to the repository (`git push origin feature/YourFeatureName`).
+5. Discuss with the team and **merge your changes** into the main branch once approved.
 
 ## Version Control
 This project is version-controlled with Git. You can view the available versions in the project's [repository](https://example.com/ZiyouBackend-master).
 
-## Contact Information
-If you have any questions, please contact us through:
-- Email: support@example.com
-- GitHub Issue Tracker: https://example.com/ZiyouBackend-master/issues
 
 ## To-Do Features
+- [x] **Understanding the Old Web Backend Behavior**
+- [x] **Migrating Data from the Old Database to the New Design**
+- [ ] **Designing the Question Generation API**  (In progress)
 - [ ] **PDF Output Adjustment via Parameters**: Implement functionality to adjust the generated PDF outputs through parameters.
 - [ ] **Integration with Educational Cloud Accounts**: Enable account integration with educational cloud services.
 - [ ] **Connection to C++ Based Question Recommendation System**: Integrate with a C++ backend system for question recommendations.
