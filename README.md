@@ -40,18 +40,17 @@ This project is version-controlled with Git. You can view the available versions
 ## To-Do Features
 - :white_check_mark: **Understanding the Old Web Backend Behavior**
 - :white_check_mark: **Migrating Data from the Old Database to the New Design**
-- :clock9: **Designing the Question Generation API**  (In progress)
-- :calendar: **PDF Output Adjustment via Parameters**: Implement functionality to adjust the generated PDF outputs through parameters.
-- :calendar: **Integration with Educational Cloud Accounts**: Enable account integration with 教育雲 account.
-- :calendar: **Connection to C++ Based Question Recommendation System**: Integrate with a C++ backend system for question recommendations.
-- :calendar: **Continuous Deployment**: Establish continuous deployment workflows to streamline updates and releases.
-- :calendar: **Comprehensive Unit Testing**: Expand the unit testing suite for more thorough coverage.
+- :arrow_forward: **Designing the Question Generation API**  (In progress)
+- :arrow_forward: **PDF Output Adjustment via Parameters**  ()
+- :calendar: **Integration with Educational Cloud(教育雲) Accounts**: 
+- :calendar: **Integrate with a C++ backend system for question Recommendation System.**: 
+- :calendar: **Establish continuous deployment workflows**:
+- :calendar: **Comprehensive Unit Testing**
 - :calendar: **Integration with Vue.js Frontend**: Integrate the backend with a Vue.js frontend for a seamless user experience.
-- :calendar: **Redis Implementation (Potential Requirement)**: Set up Redis for enhanced caching and session management.
-- :calendar: **Integration with the Xiaoxuetang Mobile App**: Connect the backend with the 小學堂 mobile app for extended functionalities.
+- :calendar: **Set up Redis for enhanced caching and session management (Potential Requirement)** 
+- :calendar: **Integration with the 小學堂 Mobile App** 
 
-
-
+## mascot
 ```
 
                        _oo0oo_
@@ -77,3 +76,4 @@ This project is version-controlled with Git. You can view the available versions
 
      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ```
+                  :sos::sos::sos:
