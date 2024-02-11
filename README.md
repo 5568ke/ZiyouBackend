@@ -38,8 +38,8 @@ This project is version-controlled with Git. You can view the available versions
 
 
 ## To-Do Features
-- [x] ✅ **Understanding the Old Web Backend Behavior**
-- [x] ✅ **Migrating Data from the Old Database to the New Design**
+- ✅  **Understanding the Old Web Backend Behavior**
+- ✅  **Migrating Data from the Old Database to the New Design**
 - [ ] **Designing the Question Generation API**  (In progress)
 - [ ] **PDF Output Adjustment via Parameters**: Implement functionality to adjust the generated PDF outputs through parameters.
 - [ ] **Integration with Educational Cloud Accounts**: Enable account integration with 教育雲 account.
