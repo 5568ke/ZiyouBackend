@@ -41,7 +41,7 @@ This project is version-controlled with Git. You can view the available versions
 - :white_check_mark: **Understanding the Old Web Backend Behavior**
 - :white_check_mark: **Migrating Data from the Old Database to the New Design**
 - :arrow_forward: **Designing the Question Generation API**  (In progress)
-- :arrow_forward: **PDF Output Adjustment via Parameters**  ()
+- :arrow_forward: **PDF Output Adjustment via Parameters**  (In progress)
 - :calendar: **Integration with Educational Cloud(教育雲) Accounts**: 
 - :calendar: **Integrate with a C++ backend system for question Recommendation System.**: 
 - :calendar: **Establish continuous deployment workflows**:
@@ -51,6 +51,7 @@ This project is version-controlled with Git. You can view the available versions
 - :calendar: **Integration with the 小學堂 Mobile App** 
 
 ## mascot
+                  :sos::sos::sos:
 ```
 
                        _oo0oo_
@@ -76,4 +77,3 @@ This project is version-controlled with Git. You can view the available versions
 
      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ```
-                  :sos::sos::sos:
