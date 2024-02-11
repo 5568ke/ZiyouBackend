@@ -4,6 +4,7 @@ from typing import List
 from ..crud import ProblemDAO
 from ..utils.pdf_generator import PDFGenerator 
 from ..models import Problem
+from ..schemas import ProblemRequest
 
 class ProblemService:
     def __init__(self, problem_dao: ProblemDAO):
@@ -32,8 +33,7 @@ class ProblemService:
         selected_problems = random.sample(problems, min(len(problems), num_problems))
         return selected_problems 
 
-    def generate_pdf(self, selected_problems: List[Problem]) -> PDFGenerator :
-        commands = [(problem.program.program_name, problem.parameter) for problem in selected_problems]
-        pdf_generator = PDFGenerator(commands)
+    def generate_pdf(self, request: ProblemRequest, selected_problems: List[Problem]) -> PDFGenerator:
+        pdf_generator = PDFGenerator(ProblemRequest,selected_problems)
         pdf_generator.execute()
         return pdf_generator

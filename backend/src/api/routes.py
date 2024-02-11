@@ -36,9 +36,9 @@ def get_pdf(request: ProblemRequest, db: Session = Depends(get_db)):
     problem_service = ProblemService(problem_dao=problem_dao)
     try:
         problems = problem_service.find_and_select_problems(db, request.version, request.grade, request.chapter, request.difficulty, request.fill_in_blanks_count)
-        pdf_generator = problem_service.generate_pdf(problems)
+        pdf_generator = problem_service.generate_pdf(request, problems)
         return [
-            {"commands" : str(pdf_generator)},
+            {str(pdf_generator)},
             {"problems" : problems}
         ]
     except ValueError as e:
