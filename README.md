@@ -1,3 +1,6 @@
+![example workflow](https://github.com/5568ke/ZiyouBackend/actions/workflows/ci.yml/badge.svg)
+
+
 ```
 
                        _oo0oo_
