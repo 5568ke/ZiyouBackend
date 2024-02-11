@@ -38,17 +38,17 @@ This project is version-controlled with Git. You can view the available versions
 
 
 ## To-Do Features
-- ✅  **Understanding the Old Web Backend Behavior**
-- ✅  **Migrating Data from the Old Database to the New Design**
-- [ ] **Designing the Question Generation API**  (In progress)
-- [ ] **PDF Output Adjustment via Parameters**: Implement functionality to adjust the generated PDF outputs through parameters.
-- [ ] **Integration with Educational Cloud Accounts**: Enable account integration with 教育雲 account.
-- [ ] **Connection to C++ Based Question Recommendation System**: Integrate with a C++ backend system for question recommendations.
-- [ ] **Continuous Deployment**: Establish continuous deployment workflows to streamline updates and releases.
-- [ ] **Comprehensive Unit Testing**: Expand the unit testing suite for more thorough coverage.
-- [ ] **Integration with Vue.js Frontend**: Integrate the backend with a Vue.js frontend for a seamless user experience.
-- [ ] **Redis Implementation (Potential Requirement)**: Set up Redis for enhanced caching and session management.
-- [ ] **Integration with the Xiaoxuetang Mobile App**: Connect the backend with the 小學堂 mobile app for extended functionalities.
+- ✅ **Understanding the Old Web Backend Behavior**
+- ✅ **Migrating Data from the Old Database to the New Design**
+- ❌ **Designing the Question Generation API**  (In progress)
+- ❌ **PDF Output Adjustment via Parameters**: Implement functionality to adjust the generated PDF outputs through parameters.
+- ❌ **Integration with Educational Cloud Accounts**: Enable account integration with 教育雲 account.
+- ❌ **Connection to C++ Based Question Recommendation System**: Integrate with a C++ backend system for question recommendations.
+- ❌ **Continuous Deployment**: Establish continuous deployment workflows to streamline updates and releases.
+- ❌ **Comprehensive Unit Testing**: Expand the unit testing suite for more thorough coverage.
+- ❌ **Integration with Vue.js Frontend**: Integrate the backend with a Vue.js frontend for a seamless user experience.
+- ❌ **Redis Implementation (Potential Requirement)**: Set up Redis for enhanced caching and session management.
+- ❌ **Integration with the Xiaoxuetang Mobile App**: Connect the backend with the 小學堂 mobile app for extended functionalities.
 
 
 
