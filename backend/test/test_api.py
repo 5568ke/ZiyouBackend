@@ -2,7 +2,7 @@ import sys
 sys.path.append('/usr/backend')
 
 ## for github action
-sys.path.append('//home/runner/work/ZiyouBackend/ZiyouBackend/backend')
+sys.path.append('/home/runner/work/ZiyouBackend/ZiyouBackend/backend')
 
 from fastapi.testclient import TestClient
 from src.main import backend_app as backend_app
