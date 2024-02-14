@@ -113,20 +113,20 @@ This project is version-controlled with Git. You can view the available versions
 ## To-Do Features
 - :white_check_mark: **Understanding the Old Web Backend Behavior**
 - :white_check_mark: **Migrating Data from the Old Database to the New Design**
-  - **Note**: Migration of junior high school data is temporarily halted due to suspected non-existent units (potentially due to user input errors).
+  - **Note**: Migration of junior high school data is temporarily halted due to suspected non-existent chapters (potentially due to user input errors).
 - :white_check_mark: **Integrate with a C++ backend system for question Recommendation System**
-  - **Supplement**: Communication with the C++ backend via gRPC has been successfully established, allowing developers to build on the existing framework without the need for additional networking libraries. Currently awaiting further implementation by the relevant personnel to enhance the recommendation algorithms and fully leverage the integration capabilities.
-- :arrow_forward: **Designing the Question Generation API**  (In progress)
-  - **Supplement**: The basic API (resembling the old 小學堂 quick question generation) has been completed. Awaiting further API requirements from the frontend . (Progress temporarily paused)
-- :arrow_forward: **PDF Output Adjustment via Parameters**  (In progress)
-  - **Supplement**: Awaiting an update to the LaTeX compiler before implementation in the web backend can proceed. (Halfway done, progress temporarily paused)
+  - **Supplement**: Communication with the C++ backend via gRPC has been established, allowing developers to build on the existing framework without the need for additional networking libraries. Currently awaiting further implementation of the recommendation algorithm.
+- :arrow_forward: **Designing the Question Generation API**   (Progress temporarily paused)
+  - **Supplement**: The basic API (resembling the old 小學堂 quick question generation) has been completed. Awaiting further API requirements from the frontend .
+- :arrow_forward: **PDF Output Adjustment via Parameters**  (Halfway done, progress temporarily paused)
+  - **Supplement**: Awaiting an update to the LaTeX compiler before implementation in the web backend can proceed. 
 - :calendar: **Integration with Educational Cloud (教育雲) Accounts**
 - :calendar: **Establish continuous deployment workflows**
 - :calendar: **Comprehensive Unit Testing**
 - :calendar: **Integration with Vue.js Frontend**: 
 - :calendar: **Set up Redis for enhanced caching and session management (Potential Requirement)** 
 - :calendar: **Integration with the 小學堂 Mobile App** 
-- :calendar: **Finding a scapegoat to take the fall**
+- :calendar: **抓下一個倒楣鬼進來坐牢**
 
 
 
