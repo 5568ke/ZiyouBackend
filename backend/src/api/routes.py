@@ -43,3 +43,19 @@ def get_pdf(request: ProblemRequest, db: Session = Depends(get_db)):
         ]
     except ValueError as e:
         raise HTTPException(status_code=404, detail=str(e))
+
+@router.post("/get-pdf-with-recommandation/")
+def get_pdf_with_recommandation(request: ProblemRequest, db: Session = Depends(get_db)):  
+    problem_dao = ProblemDAO()
+    problem_service = ProblemService(problem_dao=problem_dao)
+    try:
+        problems = problem_service.get_problem_with_recommandation(request,db)
+        # pdf_generator = problem_service.generate_pdf(request, problems)
+        # return [
+        #     {str(pdf_generator)},
+        #     {"problems" : problems}
+        # ]
+        return "test"
+    except ValueError as e:
+        raise HTTPException(status_code=404, detail=str(e))
+

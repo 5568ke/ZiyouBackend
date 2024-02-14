@@ -5,10 +5,12 @@ from ..crud import ProblemDAO
 from ..utils.pdf_generator import PDFGenerator 
 from ..models import Problem
 from ..schemas import ProblemRequest
+from . import recommendation_service 
 
 class ProblemService:
     def __init__(self, problem_dao: ProblemDAO):
         self.problem_dao = problem_dao
+        self.recommendation_service = recommendation_service.RecommendationService()
 
     def find_and_select_problems(self, db: Session, version: int, grade: int, chapters: List[int], difficulties: List[int], num_problems: int):
         chapters_id_list = []
@@ -32,6 +34,11 @@ class ProblemService:
 
         selected_problems = random.sample(problems, min(len(problems), num_problems))
         return selected_problems 
+
+    def get_problem_with_recommandation(self, request: ProblemRequest, db: Session):
+        recommandation_problems = self.recommendation_service.get_recommendations(request)
+        return recommandation_problems
+        
 
     def generate_pdf(self, request: ProblemRequest, selected_problems: List[Problem]) -> PDFGenerator:
         pdf_generator = PDFGenerator(ProblemRequest,selected_problems)
