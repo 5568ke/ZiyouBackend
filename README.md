@@ -121,11 +121,12 @@ This project is version-controlled with Git. You can view the available versions
 - :arrow_forward: **PDF Output Adjustment via Parameters**  (Halfway done, progress temporarily paused)
   - **Supplement**: Awaiting an update to the LaTeX compiler before implementation in the web backend can proceed. 
 - :calendar: **Integration with Educational Cloud (教育雲) Accounts**
+- :calendar: **Integration with Vue.js Frontend**: 
+  - **Supplement**: API that allows administrative staff to update question type data via a UI interface.
+- :calendar: **Integration with the 小學堂 Mobile App** 
 - :calendar: **Establish continuous deployment workflows**
 - :calendar: **Comprehensive Unit Testing**
-- :calendar: **Integration with Vue.js Frontend**: 
 - :calendar: **Set up Redis for enhanced caching and session management (Potential Requirement)** 
-- :calendar: **Integration with the 小學堂 Mobile App** 
 - :calendar: **抓下一個倒楣鬼進來坐牢**
 
 
