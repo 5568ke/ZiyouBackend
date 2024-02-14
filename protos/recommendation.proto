@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package recommendation;
+
+// The recommendation service definition
+service Recommendation {
+  rpc GetRecommendation (RecommendationRequest) returns (RecommendationResponse) {}
+}
+
+// The recommendation request message
+message RecommendationRequest {
+  int32 version = 1;
+  int32 grade = 2;
+  repeated int32 chapters = 3;
+  repeated int32 difficulties = 4;
+  int32 numProblems = 5;
+}
+
+// The recommendation response message
+message RecommendationResponse {
+  repeated int32 problemIds = 1;
+}
+
+
