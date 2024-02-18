@@ -12,18 +12,19 @@ class RecommendationService:
     def __init__(self):
         self.grpc_server_address = 'recommendation:50051' 
 
-    def get_recommendations(self, request: ProblemRequest) -> List[int]:
-        with grpc.insecure_channel(self.grpc_server_address) as channel:
+    async def get_recommendations(self, request: ProblemRequest) -> List[int]:
+        # Note: Use grpc.aio.insecure_channel for asynchronous operations
+        async with grpc.aio.insecure_channel(self.grpc_server_address) as channel:
             stub = recommendation_pb2_grpc.RecommendationStub(channel)
-            request = recommendation_pb2.RecommendationRequest(
+            grpc_request = recommendation_pb2.RecommendationRequest(
                 version=request.version,
                 grade=request.grade,
                 chapters=request.chapter,
                 difficulties=request.difficulty,
                 numProblems=request.fill_in_blanks_count
             )
-            response = stub.GetRecommendation(request)
+            # Await the asynchronous call to GetRecommendation
+            response = await stub.GetRecommendation(grpc_request)
             print(response.problemIds)
-            print("test")
-        return response
+        return response.problemIds
 

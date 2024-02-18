@@ -35,8 +35,8 @@ class ProblemService:
         selected_problems = random.sample(problems, min(len(problems), num_problems))
         return selected_problems 
 
-    def get_problem_with_recommandation(self, request: ProblemRequest, db: Session):
-        recommandation_problems = self.recommendation_service.get_recommendations(request)
+    async def get_problem_with_recommandation(self, request: ProblemRequest, db: Session):
+        recommandation_problems = await self.recommendation_service.get_recommendations(request)
         return recommandation_problems
         
 

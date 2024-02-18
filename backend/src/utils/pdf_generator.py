@@ -13,8 +13,10 @@ class PDFGenerator:
             ProblemCommand(
                 problem.program.program_name,
                 problem.parameter,
-                request.oform,
-                request.color
+                # request.oform,
+                # request.color
+                "a4",
+                "black"
             )
             for problem in selected_problems
         ]
@@ -30,7 +32,7 @@ class PDFGenerator:
             for command in self.commands:
                 cmd_line = command.get_command_line(self.latex_file_path)
                 print("Executing command: ", cmd_line)
-                subprocess.run(cmd_line, shell=True, check=True, stdout=latex_file, stderr=subprocess.PIPE)
+                # subprocess.run(cmd_line, shell=True, check=True, stdout=latex_file, stderr=subprocess.PIPE)
         
         # self.compile_pdf()  
         return self.latex_file_path.replace('.tex', '.pdf')
