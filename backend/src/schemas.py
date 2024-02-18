@@ -143,3 +143,7 @@ class ProblemRequest(BaseModel):
             }
         }
         allow_population_by_field_name = True
+
+class ChapterGradeRequest(BaseModel):
+    grade: int
+    chapters: List[int]

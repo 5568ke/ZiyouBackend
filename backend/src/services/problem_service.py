@@ -4,7 +4,7 @@ from typing import List
 from ..crud import ProblemDAO
 from ..utils.pdf_generator import PDFGenerator 
 from ..models import Problem
-from ..schemas import ProblemRequest
+from ..schemas import ProblemRequest, ChapterGradeRequest
 from . import recommendation_service 
 
 class ProblemService:
@@ -44,3 +44,7 @@ class ProblemService:
         pdf_generator = PDFGenerator(ProblemRequest,selected_problems)
         pdf_generator.execute()
         return pdf_generator
+
+    # def get_chapters(self, request: ChapterGradeRequest) -> List[ChapterEdition]:
+    #     # Adjusted to query ChapterEdition with 'grade' and 'chapter_id' fields
+    #     return self.db.query(ChapterEdition).filter(ChapterEdition.grade == request.grade, ChapterEdition.chapter_id.in_(request.chapters)).all()
