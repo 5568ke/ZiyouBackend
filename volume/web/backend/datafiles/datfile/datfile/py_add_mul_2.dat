@@ -1,0 +1,63 @@
+#Answer = Int_1 * Int_2 + Int_3 * Int_4
+
+\Range
+Integer | Int_1    | Int_2   | Int_3   | Int_4   | Answer
+  1     | [1,100]  | [1,100] | [1,100] | [1,100] | -
+\EndRange
+
+#1
+
+\Begin
+
+\Question
+{object_1} 一 {unit_1} {Int_1} 元 , {object_2} 一 {unit_2} {Int_3} 元 , 現在買 {Int_2} {unit_1} {object_1} , {Int_4} {unit_2} {object_2} , 共要多少元 ?
+
+\Unordered_Variable
+object_1,object_2
+襪子,手帕
+漢堡,可樂
+鉛筆,橡皮擦
+上衣,褲子
+檸檬,柳橙,蘋果,橘子
+
+\Solution
+Answer,Int_1,Int_2,Int_3,Int_4,
+Answer = Int_1 * Int_2 + Int_3 * Int_4
+
+\End
+
+#2
+
+\Begin
+
+\Question
+{where} {object_1} 有 {object_3} {Int_1} {unit_1} , 每 {unit_1} {object} 有 {Int_2} {unit} , {object_2} 有 {object_3} {Int_3} {unit_1} , 每 {unit_1} {object} 有 {Int_4} {unit} ,則 {where} 共有 {object} 多少 {unit} ?
+
+\Unordered_Variable
+where | object_1,object_2                         | object | unit_1 | object_3
+None  | 一年級,二年級,三年級,四年級,五年級,六年級 | 學生   | 班     | None
+戲院  | 樓上,樓下                                 | 座位   | 行     | 座位
+
+\Solution
+Answer,Int_1,Int_2,Int_3,Int_4,
+Answer = Int_1 * Int_2 + Int_3 * Int_4
+
+\End
+
+#3
+
+\Begin
+
+\Question
+{object_1} {Int_1} {unit} , {object_2} {Int_3} {unit} , 共有多少元 ?
+
+\Unordered_Variable
+object_1-Int_2 | object_2-Int_4 | unit
+10元鈔票-10    | 50元鈔票-50    | 張
+
+\Solution
+Answer,Int_1,Int_2,Int_3,Int_4,
+Answer = Int_1 * Int_2 + Int_3 * Int_4
+
+\End
+

@@ -1,0 +1,25 @@
+%==============================
+%     latex_preamble1
+%==============================
+
+\documentclass[12pt]{report}
+
+\usepackage{graphics}
+\usepackage{alltt}
+\usepackage{fancyhdr}
+\usepackage{fancybox}
+\usepackage{bm}
+\usepackage{latexsym}
+\usepackage{amssymb}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{pict2e}
+\usepackage{epic}
+\usepackage{creport}
+\usepackage{multicol}
+\usepackage{curves}
+\usepackage{setspace}
+\usepackage{rotating}
+
+
+\definecolor{DarkGreen}{rgb}{0,0.4,0}
+

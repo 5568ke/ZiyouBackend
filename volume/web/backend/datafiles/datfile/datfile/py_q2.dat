@@ -1,0 +1,25 @@
+\Range
+Integer | Int_1   | Int_2   | Answer_1 | Answer_2
+  1     | [1,9]   | [1,9]   | [1,9]    | [1,9]  
+  2     | [10,99] | [10,99] | [10,99]  | [10,99]
+
+\EndRange
+
+#1
+\Begin
+
+\Question
+一 {unit} {object_1} {Int_1} 元 , 一 {unit} {object_2} {Int_2} 元 。{who} 買了相同數量的 {object_1} 和 {object_2} , 共花了 {Int_3} 元 , {who} 買了幾 {unit} {object_1} 和幾 {unit} {object_2} ?
+
+\Unordered_Variable
+who  | object_1,object_2 | unit
+弟弟 | 珍珠奶茶,紅茶     | 杯
+阿姨 | 豬肉,牛肉         | 公斤
+小綠 | 藍筆,紅筆         | 枝
+
+\Solution
+Answer_1,Answer_2,Int_1,Int_2,Int_3,
+Answer_2 = Answer_1
+Int_3 = Int_1 * Answer_1 + Int_2 * Answer_2
+
+\End

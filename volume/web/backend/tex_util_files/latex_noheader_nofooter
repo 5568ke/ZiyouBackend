@@ -1,0 +1,16 @@
+%==============================
+%    latex_header_footer
+%==============================
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\lhead{}
+\chead{}
+\rhead{}
+
+
+

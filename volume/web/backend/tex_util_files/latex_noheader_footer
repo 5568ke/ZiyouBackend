@@ -1,0 +1,16 @@
+%==============================
+%    latex_header_footer
+%==============================
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\lfoot{\small\textsf\thepage}
+\cfoot{\hkyuan\chmagnification=900\raisebox{1.05em}{國立中央大學數學系}\\[-1.1em]國小數學題目自動化研究室}
+\rfoot{\small\textsf\thepage}
+\lhead{}
+\chead{}
+\rhead{}
+
+
+

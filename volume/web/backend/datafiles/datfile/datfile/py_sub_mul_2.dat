@@ -1,0 +1,39 @@
+#Answer = Int_1 * Int_2 - Int_3
+
+\Range
+Integer | Int_1   | Int_2   | Int_3    | Answer
+  1     | [1,100] | [1,100] | [1,9999] |   -
+  1     | [1,999] | [1,10]  | [1,9999] |   -
+  1     | [1,10]  | [1,999] | [1,9999] |   -
+
+\EndRange
+
+#1
+
+\Begin
+
+\Question
+{object_1} 有 {Int_1} 元 , {object_2} 的錢是 {object_1} 的 {Int_2} 倍 , func('比',['{object_2}','{object_3}'],'多少') {Int_3} 元 , 則 {object_3} 有多少元 ?
+
+\Unordered_Variable
+object_1,object_2,object_3
+甲,乙,丙
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 * Int_2 - Int_3
+
+\End
+
+#2
+
+\Begin
+
+\Question
+{Int_1} 與 {Int_2} 的積減去 {Int_3} , 結果是多少 ?
+
+\Solution
+Answer,Int_1,Int_2,Int_3,
+Answer = Int_1 * Int_2 - Int_3
+
+\End

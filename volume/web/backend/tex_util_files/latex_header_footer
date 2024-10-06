@@ -1,0 +1,39 @@
+%==============================
+%    latex_header_footer
+%==============================
+
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0.1em}
+\renewcommand{\footrulewidth}{0pt}
+\lfoot{\small\textsf\thepage}
+\cfoot{\hkyuan\chmagnification=900\raisebox{1.05em}{國立中央大學數學系}\\[-1.1em]國小數學題目自動化研究室}
+\rfoot{\small\textsf\thepage}
+\lhead{\hkyuan\Large 綜 合 練 習 ：}
+\chead{}
+\rhead{}
+
+
+\fancypagestyle{cplain}{%
+\fancyhf{} % clear all header and footer fields
+\lhead{\color{Blue}{\hkyuan\tt{}\LARGE{}TITLE：}}
+\rhead{\color{Blue}{\raisebox{6mm}[5mm][0cm]{\begin{tabular}{|c|p{30mm}|}\hline
+{\large\hkyuan得}&\rule{0mm}{6mm}\\[2mm]
+{\large\hkyuan分}&\\[1mm] \hline\end{tabular}}}}
+\lfoot{\small\textsf\thepage}
+\cfoot{\hkyuan\chmagnification=900\raisebox{1.05em}{國立中央大學數學系}\\[-1.1em]國小數學題目自動化研究室}
+\rfoot{\small\textsf\thepage}
+\renewcommand{\headrulewidth}{0.1em}
+\renewcommand{\footrulewidth}{0pt}}
+
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\lhead{\hkyuan\tt{}\LARGE{}TITLE：}
+\rhead{\raisebox{5mm}[5mm][0cm]{\begin{tabular}{|c|p{30mm}|}\hline
+{\large\hkyuan得}&\rule{0mm}{6mm}\\[2mm]
+{\large\hkyuan分}&\\[1mm] \hline\end{tabular}}}
+\lfoot{\small\textsf\thepage}
+\cfoot{\hkyuan\chmagnification=900\raisebox{1.05em}{國立中央大學數學系}\\[-1.1em]國小數學題目自動化研究室}
+\rfoot{\small\textsf\thepage}
+\renewcommand{\headrulewidth}{0.1em}
+\renewcommand{\footrulewidth}{0pt}}
+

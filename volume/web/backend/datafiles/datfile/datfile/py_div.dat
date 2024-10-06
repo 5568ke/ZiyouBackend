@@ -1,0 +1,87 @@
+#Answer = Int_1 / Int_2
+
+\Range
+Integer | Int_1       | Int_2     | Answer
+  1     | [10,99]     | [1,9]     | - 
+
+  2     | [100,999]   | [1,9]     | -
+  3     | [1000,9999] | [1,9]     | -
+
+  4     | [10,99]     | [10,99]   | -
+  5     | [100,999]   | [10,99]   | -
+
+  6     | [1000,9999] | [10,99]   | -
+
+  7     | [100,999]   | [100,999] | -
+  8     | [1000,9999] | [100,999] | -
+\EndRange
+
+#1
+#郵票 25 張,平均分給 5 個學生,每個學生有郵票多少張?
+
+\Begin
+
+\Question
+{object_1} {Int_1} {unit_1} , 平均 {verb} {Int_2} {unit_2} {object_2} , 每 {unit_2} {object_2} 有 {object_1} 多少 {unit_1} ?
+
+\Unordered_Variable
+object_1                      | object_2-unit_2 | verb
+遊客,觀光客                   | 遊覽車-部       | 分乘
+郵票,豆子,鉛筆,色紙,汽水,西瓜 | None-人,學生-個 | 分給
+學生                          | None-組         | 分成
+學生,隊員,飛機,坦克車         | None-隊         | 分為
+玻璃杯                        | None-盒         | 分為
+金魚                          | 魚缸-個         | 放在
+餅乾,糖果,豆子                | 盤子-個         | 放在
+樹苗                          | 空地-塊         | 種在
+橘子,蘋果,鳳梨,柳丁,芭樂      | None-堆         | 分為
+巧克力糖,椰子糖,水果糖,橘子,蘋果,鳳梨,柳丁,芭樂 | None-人,學生-個 | 分給
+
+
+\Solution
+Answer,Int_1,Int_2,
+Answer = Int_1 / Int_2
+
+\End
+
+
+#2
+#一盒電池有 4 個,現有電池 36 個,可分裝成多少盒?
+
+\Begin
+
+\Question
+一 {unit_2} {object_1} 有 {Int_2} {unit_1} , 現有 {object_1} {Int_1} {unit_1} , 可 {verb} 多少 {unit_2} ?
+
+\Unordered_Variable
+object_1    | verb   | unit_2
+電池,乒乓球 | 分裝成 | 盒
+排球球員    | 分成   | 隊
+橘子,蘋果,鳳梨,柳丁,芭樂 | 分成 | 箱
+巧克力糖,椰子糖,水果糖 | 分成 | 包
+
+\Solution
+Answer,Int_1,Int_2,
+Answer = Int_1 / Int_2
+
+\End
+
+#3
+#蘋果 25 個,每 5 個裝成一盒,共可裝成多少盒?
+
+\Begin
+
+\Question
+{object_1} {Int_1} {unit_1} , 每 {Int_2} {unit_1} 裝成一 {unit_2}  , 共可裝成多少 {unit_2} ?
+
+\Unordered_Variable
+object_1                 | unit_2
+鴿子蛋,梨子,蘋果         | 盒
+橘子,蘋果,鳳梨,柳丁,芭樂 | 箱
+巧克力糖,椰子糖,水果糖   | 包
+
+\Solution
+Answer,Int_1,Int_2,
+Answer = Int_1 / Int_2
+
+\End

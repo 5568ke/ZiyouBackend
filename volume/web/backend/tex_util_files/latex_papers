@@ -1,0 +1,117 @@
+%%
+%% 定義使用的 latex 紙張，同時設定邊源留白尺寸等
+%% 
+
+%===============================================================
+%  A4 (210x297 mm)
+%===============================================================
+
+\usepackage[a4paper,dvips]{geometry}
+
+\geometry{vmargin={1.4cm,1cm},hmargin=1.3cm,includeheadfoot}
+\geometry{nomarginpar,footskip=1.8cm,headheight=23pt}
+
+
+%===============================================================
+%  Letter (216x279 mm)
+%===============================================================
+
+\usepackage[letterpaper,dvips]{geometry}
+
+\geometry{vmargin={1.6cm,1cm},hmargin=1.4cm,includeheadfoot}
+\geometry{nomarginpar,footskip=1.5cm,headheight=23pt}
+
+
+%===============================================================
+%  A4_2c (210x297 mm)
+%===============================================================
+
+\usepackage[a4paper,dvips]{geometry}
+
+\geometry{vmargin={1.4cm,1cm},hmargin=1.2cm,includeheadfoot}
+\geometry{nomarginpar,footskip=1.8cm,headheight=23pt}
+
+%% multicols environment
+
+\premulticols     0.0cm
+\postmulticols    0.0cm
+\multicolsep      1.0cm
+\columnsep        1.0cm
+\columnseprule    0.3pt
+
+
+%===============================================================
+%  A3_2c (297x420 mm)
+%===============================================================
+
+\usepackage[a3paper,dvips]{geometry}
+
+\geometry{vmargin={1.8cm,1.3cm},hmargin=1.5cm,includeheadfoot}
+\geometry{nomarginpar,footskip=1.8cm,headheight=25pt}
+
+%% multicols environmentcopy
+\premulticols     0.0cm
+\postmulticols    0.0cm
+\multicolsep      1.1cm
+\columnsep        1.1cm
+\columnseprule    0.3pt
+
+
+%===============================================================
+%    B4_2c (250x353 mm)
+%===============================================================
+
+\usepackage[b4paper,dvips]{geometry}
+
+\geometry{vmargin={1.5cm,1.3cm},hmargin=1.3cm,includeheadfoot}
+\geometry{nomarginpar,footskip=1.8cm,headheight=23pt}
+
+%% multicols environment
+\premulticols     0.0cm
+\postmulticols    0.0cm
+\multicolsep      1.0cm
+\columnsep        1.0cm
+\columnseprule    0.3pt
+
+
+%===============================================================
+%  Projector (148.5x210 mm) A5 size
+%===============================================================
+
+\usepackage[a5paper,dvips]{geometry}
+
+\geometry{vmargin={1.3cm,1cm},hmargin=1.1cm,includeheadfoot}
+\geometry{nomarginpar,footskip=1.8cm,headheight=23pt}
+
+
+%===============================================================
+%  Screen (225x180 mm)
+%===============================================================
+
+\usepackage[screen,dvips]{geometry}
+
+\geometry{vmargin={1.4cm,1cm},hmargin=1.5cm,includeheadfoot}
+\geometry{nomarginpar,footskip=1.8cm,headheight=23pt}
+
+
+%===============================================================
+%  Mes1 (117x156 mm)
+%===============================================================
+
+\usepackage[paperwidth=117mm,paperheight=156mm,body={390pt,530pt},dvips]{geometry}
+
+\geometry{vmargin={14mm,10mm},hmargin=10mm,includeheadfoot}
+\geometry{nomarginpar,footskip=18mm,headheight=23pt}
+
+
+%===============================================================
+%  Mes2 (156x208 mm)
+%===============================================================
+
+\usepackage[paperwidth=156mm,paperheight=208mm,body={390pt,530pt},dvips]{geometry}
+
+\geometry{vmargin={1.1cm,1cm},hmargin=1.1cm,includeheadfoot}
+\geometry{nomarginpar,footskip=1.8cm,headheight=21pt}
+
+
+

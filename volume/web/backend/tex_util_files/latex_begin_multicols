@@ -1,0 +1,6 @@
+%==============================
+%   latex_begin_multicols
+%==============================
+
+\begin{multicols*}{2}
+\raggedright

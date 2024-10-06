@@ -1,0 +1,6 @@
+%==============================
+%    latex_end_multicols
+%==============================
+
+\setcounter{unbalance}{1}
+\end{multicols*}

@@ -13,7 +13,7 @@ services:
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - POSTGRES_DB=${POSTGRES_DB_NAME}
     volumes:
-      - pg-data:/var/lib/postgresql/data
+      - ./volume/db/:/var/lib/postgresql/data
 
 
   pgadmin:
@@ -35,8 +35,8 @@ services:
       dockerfile: Dockerfile
       context: ./backend/
     volumes:
-      - ./backend/:/usr/backend/
-      - ./protos/:/usr/backend/protos
+      - ./volume/web/backend/:/usr/backend/
+      - ./volume/web/protos/:/usr/backend/protos
     environment:
       - DATABASE_URL=${DATABASE_URL}
     expose:
@@ -48,14 +48,12 @@ services:
 
   recommendation:
     container_name: recommendation
-    # restart: always
+    restart: always
     build:
       dockerfile: Dockerfile
-      context: ./recommendation_system/
+      context: ./volume/web/recommendation_system/
     volumes:
-      - ./recommendation_system/:/app/recommendation_system
-      - ./protos/:/app/protos
+      - ./volume/web/recommendation_system/:/app/recommendation_system
+      - ./volume/web/protos/:/app/protos
 
 
-volumes:
-  pg-data:
